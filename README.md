@@ -1,7 +1,7 @@
 About spaghetti
 ===============
 
-Home: http://github.com/pysal/spaghetti
+Home: http://pysal.org/
 
 Package license: BSD-3-Clause
 
@@ -9,11 +9,11 @@ Feedstock license: BSD 3-Clause
 
 Summary: SPAtial GrapHs: nETworks, Topology, & Inference
 
-Spaghetti is an open-source python library for the analysis
+Spaghetti is an open-source Python library for the analysis
 of network-based spatial data. Originating from the network
 module in [PySAL](http://pysal.org) (Python Spatial Analysis Library),
 it is under active development for the inclusion of
-newly proposed methods for building graph-theoretic
+newly-proposed methods for building graph-theoretic
 networks and the analysis of network events.
 
 
