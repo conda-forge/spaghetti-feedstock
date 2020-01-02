@@ -1,5 +1,6 @@
 {% set name = "spaghetti" %}
 {% set version = "1.4.0" %}
+{% set sha256 = "b1c2a25d542e9b181096206b249e65006a080c11ba342edb7686bc10d0486ec8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1c2a25d542e9b181096206b249e65006a080c11ba342edb7686bc10d0486ec8
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -31,19 +32,19 @@ test:
     - spaghetti
 
 about:
-  home: http://github.com/pysal/spaghetti
+  home: http://pysal.org/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: 'SPAtial GrapHs: nETworks, Topology, & Inference'
   description: |
-    Spaghetti is an open-source python library for the analysis 
+    Spaghetti is an open-source Python library for the analysis
     of network-based spatial data. Originating from the network 
     module in [PySAL](http://pysal.org) (Python Spatial Analysis Library), 
     it is under active development for the inclusion of 
-    newly proposed methods for building graph-theoretic 
+    newly-proposed methods for building graph-theoretic 
     networks and the analysis of network events.
-  doc_url: https://pysal-spaghetti.readthedocs.io
+  doc_url: https://pysal.org/spaghetti/
   dev_url: http://github.com/pysal/spaghetti
 
 extra:
