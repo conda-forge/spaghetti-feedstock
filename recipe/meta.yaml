@@ -1,6 +1,6 @@
 {% set name = "spaghetti" %}
-{% set version = "1.4.2.post2" %}
-{% set sha256 = "bff1f6c4139ef6283f5621f0621b5045298ebeeac58bf3ed517ad7bee5b6d146" %}
+{% set version = "1.5.0.rc0" %}
+{% set sha256 = "40e2e86b355ac8c0f785812d874b3f77ae4593143aa9f63a3a12eae442fa1696" %}
 
 package:
   name: {{ name|lower }}
@@ -21,9 +21,9 @@ requirements:
     - pip
   run:
     - python >=3
-    - scipy >=0.11
+    - scipy >=1.0
     - numpy >=1.3
-    - pandas
+    - pandas >=1.0
     - esda
     - rtree
 
