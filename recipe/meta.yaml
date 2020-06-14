@@ -32,7 +32,7 @@ test:
     - spaghetti
   commands:
     - pip check
-   requires:
+  requires:
     - pip
 
 about:
