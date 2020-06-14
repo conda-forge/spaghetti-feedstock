@@ -30,6 +30,10 @@ requirements:
 test:
   imports:
     - spaghetti
+  commands:
+    - pip check
+   requires:
+    - pip
 
 about:
   home: http://pysal.org/
