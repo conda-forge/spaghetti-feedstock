@@ -5,9 +5,13 @@ Home: http://pysal.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spaghetti-feedstock/blob/master/LICENSE.txt)
 
 Summary: SPAtial GrapHs: nETworks, Topology, & Inference
+
+Development: http://github.com/pysal/spaghetti
+
+Documentation: https://pysal.org/spaghetti/
 
 Spaghetti is an open-source Python library for the analysis
 of network-based spatial data. Originating from the network
