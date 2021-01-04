@@ -1,6 +1,6 @@
 {% set name = "spaghetti" %}
-{% set version = "1.5.3" %}
-{% set sha256 = "06cbb0f404ce21d3b60c0ff118cb98d818574d70125c4bc1242e9f56a476416f" %}
+{% set version = "1.5.6" %}
+{% set sha256 = "5f5a3224bf9d2846f9762c8da02797a65dac85f65fc47235972c4b1106276c11" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
