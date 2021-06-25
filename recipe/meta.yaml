@@ -1,6 +1,6 @@
 {% set name = "spaghetti" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "b0433f3c5e6799ed9e6b31ab443572db7681e8ecad3cfaef53299fec0138a671" %}
+{% set version = "1.6.0.post2" %}
+{% set sha256 = "f0b78145bd4ff81575b6b294717e383693ef3a51adede1555d2527d75017dd46" %}
 
 package:
   name: {{ name|lower }}
