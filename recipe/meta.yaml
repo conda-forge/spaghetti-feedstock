@@ -1,5 +1,5 @@
 {% set name = "spaghetti" %}
-{% set version = "1.7.3" %}
+{% set version = "1.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spaghetti-{{ version }}.tar.gz
-  sha256: 96db77d479d61f14421fbd6f54b857b2a74d567d9e579182d9f271921a1b959e
+  sha256: 9898ea86744b6ced9923f8bc213964045615f31ce14f304d20db0aecca40728d
 
 build:
   noarch: python
