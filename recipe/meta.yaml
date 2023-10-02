@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,6 +27,8 @@ requirements:
     - pandas >=1.0
     - rtree
     - scipy >=1.0
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
 
 test:
   imports:
@@ -58,3 +60,4 @@ extra:
   recipe-maintainers:
     - jGaboardi
     - knaaptime
+    - martinfleis
