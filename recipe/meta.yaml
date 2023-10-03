@@ -12,13 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
     - python >=3.8
     - pip
-    - versioneer
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
   run:
     - python >=3.8
     - esda
@@ -27,8 +28,6 @@ requirements:
     - pandas >=1.0
     - rtree
     - scipy >=1.0
-    - setuptools >=61.0
-    - setuptools-scm >=6.2
 
 test:
   imports:
