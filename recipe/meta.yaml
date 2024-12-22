@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spaghetti-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spaghetti-{{ version }}.tar.gz
   sha256: c9beddbb3bf285e88745d36aee886c78ac6e6a416f0f9b1a441265c8c08f923d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=61.0
     - setuptools-scm >=6.2
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - esda
     - libpysal
     - numpy
@@ -30,6 +30,8 @@ requirements:
     - scipy >=1.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - spaghetti
   # --> comment from @ocefpaf <-- see conda-forge/libpysal-feedstock#8
